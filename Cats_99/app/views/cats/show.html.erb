@@ -1,0 +1,13 @@
+
+<h2><%=@cat.name  %></h2> 
+<%= link_to "Update Cat" ,edit_cat_url(@cat) %>
+<ul>
+  <li>Age: <%=@cat.age %></li>
+  <li>Birthday: <%=@cat.birth_date%> </li>
+  <li>Color: <%=@cat.color%> </li>
+  <li>Sex: <%=@cat.sex%> </li>
+  <% if @cat.description %>
+    <li>Description: <%=@cat.description%> </li>
+  <% end %>
+  <a href=<%=cats_url%>>Main Page</a>
+</ul>
